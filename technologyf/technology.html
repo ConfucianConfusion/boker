@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术钩沉</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0e8f5; /* 背景色改为淡紫色系 */
+            color: #333;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #8a6bb1; /* 边框色改为淡紫色 */
+        }
+
+        .header-content {
+            position: relative;
+        }
+
+        .home-button {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            padding: 10px 20px;
+            background-color: #8a6bb1; /* 按钮背景色改为淡紫色 */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease; /* 添加过渡效果 */
+        }
+
+        .home-button:hover {
+            background-color: #6c4d9a; /* 悬浮时按钮颜色变深 */
+        }
+
+        h1 {
+            color: #8a6bb1; /* 标题颜色改为淡紫色 */
+            margin: 0;
+            font-size: 36px;
+        }
+
+        p {
+            color: #666;
+            font-size: 18px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .post {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* 添加悬浮动画 */
+            cursor: pointer; /* 鼠标悬浮时显示手形 */
+        }
+
+        .post:hover {
+            transform: translateY(-5px); /* 悬浮时向上移动 */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* 阴影加深 */
+        }
+
+        .post a {
+            text-decoration: none; /* 去掉链接下划线 */
+            color: inherit; /* 继承父元素的颜色 */
+            display: block; /* 使整个文章区域可点击 */
+        }
+
+        .post h2 {
+            color: #000;
+            margin-top: 0;
+        }
+
+        .post .date {
+            color: #8a6bb1; /* 日期颜色改为淡紫色 */
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="..\thinkloud.html" class="home-button">首页</a>
+            <h1>又是努力成为计算机大佬的一天</h1>
+            <p>“Every once in a while, a revolutionary product comes along that changes everything.”---Steve Jobs' 2007 Apple Keynote</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="post">
+            <a href="post1.html">
+                <h2>关于技术的思考</h2>
+                <p class="date">发布于 2025-03-06</p>
+                <p>技术如何改变我们的生活？这是一个值得深思的问题。从编程到人工智能，每一步都在重塑我们的世界。</p>
+            </a>
+        </section>
+
+        <section class="post">
+            <a href="post2.html">
+                <h2>关于生活的思考</h2>
+                <p class="date">发布于 2025-03-05</p>
+                <p>生活的意义是什么？是忙碌工作，还是停下来欣赏风景？每个人都有自己的答案。</p>
+            </a>
+        </section>
+    </main>
+</body>
+</html>

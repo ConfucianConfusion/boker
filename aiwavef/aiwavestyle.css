@@ -1,0 +1,147 @@
+/* 全局样式 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* 淡蓝色背景 */
+    color: #333;
+}
+
+/* 容器样式 */
+.container {
+    max-width: 1200px; /* 控制最大宽度 */
+    margin: 0 auto; /* 居中 */
+    padding: 20px;
+}
+
+/* 标题样式 */
+header#title-block-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff; /* 白色背景 */
+    border-radius: 10px; /* 圆角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影 */
+    width: 100%; /* 覆盖页面宽度 */
+    max-width: 100%; /* 确保不超出页面宽度 */
+    box-sizing: border-box; /* 包含内边距和边框 */
+}
+
+header#title-block-header .title {
+    font-size: 2.5em;
+    color: #0077b6; /* 深蓝色标题 */
+    margin-bottom: 10px;
+}
+
+/* 按钮样式 */
+.button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button-container a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #00b4d8; /* 淡蓝色按钮背景 */
+    color: #ffffff; /* 白色文字 */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button-container a:hover {
+    background-color: #0096c7; /* 鼠标悬停时变深蓝色 */
+}
+
+/* 正文框架样式 */
+.content-frame {
+    background-color: #ffffff; /* 白色背景 */
+    border-radius: 10px; /* 圆角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影 */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* 副标题样式 */
+h3, h4 {
+    color: #0096c7; /* 中等蓝色副标题 */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+/* 段落样式 */
+p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* 强调文本样式 */
+strong {
+    color: #023e8a; /* 深蓝色强调文本 */
+}
+
+/* 上标和下标样式 */
+sup {
+    font-size: 0.8em;
+    vertical-align: super;
+    color: #0077b6; /* 深蓝色上标 */
+}
+
+/* 列表样式 */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* 链接样式 */
+a {
+    color: #00b4d8; /* 淡蓝色链接 */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header#title-block-header .title {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    h4 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .button-container a {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}

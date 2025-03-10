@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人博客</title>
+    <style>
+        /* 全局样式 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #e6f0fa; /* 淡蓝色背景 */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* 标题区域样式 */
+        .header {
+            background-color: #d6e8f5; /* 淡蓝色分区背景 */
+            width: 100%;
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 3px solid #4682b4; /* 分区底部边框 */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+            margin-bottom: 30px; /* 与下方内容保持间距 */
+        }
+
+        /* 主标题样式 */
+        h1 {
+            font-size: 2.5em;
+            color: #4682b4; /* 淡蓝色标题 */
+            margin: 0 0 10px 0; /* 调整间距 */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 副标题样式 */
+        h2 {
+            font-size: 1.5em;
+            color: #5f9ea0; /* 稍深的淡蓝色 */
+            margin: 0;
+            font-weight: normal; /* 副标题不加粗 */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* 卡片容器 */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 修改为每行3列 */
+            gap: 40px; /* 增加间距 */
+            padding: 20px;
+            max-width: 1200px; /* 加宽容器以适应更多卡片 */
+            width: 100%;
+        }
+
+        /* 卡片样式 */
+        .card {
+            background-color: #f0f8ff; /* 淡蓝色卡片背景 */
+            border: 2px solid #b0c4de; /* 淡蓝色边框 */
+            border-radius: 15px;
+            padding: 30px; /* 增加内边距 */
+            text-align: center;
+            text-decoration: none;
+            color: #2f4f4f;
+            font-size: 1.3em; /* 增大字体 */
+            font-weight: bold;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* 增大阴影 */
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            min-height: 300px; /* 设置最小高度 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 图片样式 */
+        .card img {
+            max-width: 100%; /* 图片自适应卡片宽度 */
+            height: auto; /* 保持比例 */
+            border-radius: 10px; /* 图片圆角 */
+            margin-bottom: 15px; /* 图片与文字间距 */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+        }
+
+        /* 卡片悬浮效果 */
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            background-color: #e0eff1; /* 悬浮时稍微加深背景 */
+        }
+
+        /* 底部联系信息 */
+        .footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #b0c4de; /* 淡蓝色底部背景 */
+            width: 100%;
+            text-align: center;
+            font-size: 0.9em;
+            color: #2f4f4f;
+            border-top: 2px solid #4682b4;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 900px) { /* 调整断点以适应3列布局 */
+            .container {
+                grid-template-columns: repeat(2, 1fr); /* 中等屏幕变为2列 */
+                gap: 25px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr; /* 小屏幕时变为单列 */
+                gap: 25px;
+            }
+
+            .card {
+                font-size: 1.1em;
+                padding: 20px;
+                min-height: 250px; /* 小屏幕下略微减小高度 */
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 标题区域 -->
+    <header class="header">
+        <h1>Confucian Confusion的博客</h1>
+        <h2>点击你感兴趣的版块进行浏览~~~</h2>
+    </header>
+
+    <!-- 卡片容器 -->
+    <div class="container">
+        <!-- 卡片 1 -->
+        <a href="literaturef\literature.html" class="card">
+            <img src="icons\book.gif" alt="文学创作">
+            文学创作
+        </a>
+        <!-- 卡片 2 -->
+        <a href="technologyf\technology.html" class="card">
+            <img src="icons\web-developer.gif" alt="技术钩沉">
+            技术钩沉
+        </a>
+        <!-- 卡片 3 -->
+        <a href="slowdivef\slowdive.html" class="card">
+            <img src="icons\weightlifting.gif" alt="沉淀感悟">
+            沉淀感悟
+        </a>
+        <!-- 卡片 4 -->
+        <a href="documentf\document.html" class="card">
+            <img src="icons\discussion.gif" alt="闲言碎语">
+            档案馆
+        </a>
+        <!-- 卡片 5 -->
+        <a href="aiwavef\aiwave.html" class="card">
+            <img src="icons\artificial-intelligence.gif" alt="人工智能浪潮">
+            人工智能浪潮
+        </a>
+        <!-- 卡片 6 -->
+        <a href="collectionf\collection.html" class="card">
+            <img src="icons\photo-gallery.gif" alt="同窗妙笔">
+            同窗妙笔
+        </a>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+        © Copyleft 2025 Yi Liu. Very few rights reserved. Contact me:12412625@mail.sustech.edu.cn
+    </div>
+</body>
+</html>
